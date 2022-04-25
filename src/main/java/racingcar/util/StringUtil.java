@@ -2,6 +2,8 @@ package racingcar.util;
 
 public class StringUtil {
 
+    public static String VALIDATE_ERROR_MESSAGE = "[ERROR] 잘못된 입력입니다.";
+    public static String COMMA = ",";
     public StringUtil() {
     }
 
@@ -13,8 +15,8 @@ public class StringUtil {
     }
 
     public static String[] splitText(String value) {
-        if (isBlank(value) || !value.contains(",")) {
-            throw new IllegalArgumentException("[ERROR] 잘못된 입력입니다.");
+        if (isBlank(value) || !value.contains(COMMA)) {
+            throw new IllegalArgumentException(VALIDATE_ERROR_MESSAGE);
         }
         return value.replace(" ", "").split(",");
     }

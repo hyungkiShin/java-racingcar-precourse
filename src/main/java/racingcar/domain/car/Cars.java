@@ -37,10 +37,4 @@ public class Cars {
         return new ArrayList<>(cars);
     }
 
-    @Override
-    public String toString() {
-        return "Cars{" +
-                "cars=" + cars +
-                '}';
-    }
 }

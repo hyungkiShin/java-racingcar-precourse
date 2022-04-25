@@ -27,10 +27,4 @@ public class Position {
         return this.position == maxPosition;
     }
 
-    @Override
-    public String toString() {
-        return "Position{" +
-                "position=" + position +
-                '}';
-    }
 }

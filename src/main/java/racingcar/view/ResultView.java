@@ -9,10 +9,11 @@ public class ResultView {
     public static final int MARGIN = 1;
     public static final int START_TEXT_INDEX = 0;
     public static final String DASH = "-";
-    public static final String COLUMN = ": ";
+    public static final String COLUMN = " : ";
     public static final String COMMA = ",";
     public static final String GAME_RESULT = "실행결과";
-    public static final String WINNER_MESSAGE = "가 최종 우승했습니다.";
+    public static final String WINNER_MESSAGE = "최종 우승자는 ";
+    public static final String WINNER_MESSAGE2 = " 입니다.";
 
     private Cars winners;
     private Record record;
@@ -54,6 +55,6 @@ public class ResultView {
             sb.append(car.getName() + COMMA);
         }
         final String winners = sb.substring(START_TEXT_INDEX, sb.length() - MARGIN);
-        System.out.println(winners + WINNER_MESSAGE);
+        System.out.println(WINNER_MESSAGE + winners + WINNER_MESSAGE2);
     }
 }

@@ -48,11 +48,4 @@ public class Car {
         return position.isMaxPosition(maxPosition);
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "name=" + name +
-                ", position=" + position +
-                '}';
-    }
 }

@@ -67,7 +67,7 @@ class ApplicationTest extends NsTest {
 
     static void validateNameLength(String name) {
         if(name.length() > 5) {
-            throw new IllegalArgumentException("이름이 너무길어");
+            throw new IllegalArgumentException("이름은 5자를 넘길수 없다");
         }
     }
 

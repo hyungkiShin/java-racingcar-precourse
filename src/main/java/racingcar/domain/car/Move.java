@@ -7,7 +7,6 @@ public class Move {
     public static final int MOVE_RANGE = 4;
     public static final int MIN_MOVE_RANGE = 1;
     public static final int MAX_MOVE_RANGE = 9;
-    public static final int MAX_GENERATE_MOVE_RANGE = 10;
 
     public boolean canMove(int randomNumber) {
         return MOVE_RANGE <= randomNumber && randomNumber <= MAX_MOVE_RANGE;
