@@ -1,6 +1,5 @@
 package racingcar.domain.name;
 
-import racingcar.domain.name.Name;
 import racingcar.util.StringUtil;
 
 import java.util.ArrayList;

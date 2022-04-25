@@ -24,6 +24,19 @@ public class Cars {
         }
     }
 
+    public Cars move() {
+        List<Car> carsRecords = new ArrayList<>();
+        for (Car car : cars) {
+            Car movedCar = car.move();
+            carsRecords.add(movedCar);
+        }
+        return new Cars(carsRecords);
+    }
+
+    public List<Car> getCars() {
+        return new ArrayList<>(cars);
+    }
+
     @Override
     public String toString() {
         return "Cars{" +

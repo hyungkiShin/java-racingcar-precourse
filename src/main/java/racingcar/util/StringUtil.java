@@ -14,7 +14,7 @@ public class StringUtil {
 
     public static String[] splitText(String value) {
         if (isBlank(value) || !value.contains(",")) {
-            throw new IllegalArgumentException("잘못된 입력입니다.");
+            throw new IllegalArgumentException("[ERROR] 잘못된 입력입니다.");
         }
         return value.replace(" ", "").split(",");
     }

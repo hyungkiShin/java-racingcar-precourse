@@ -1,6 +1,6 @@
 package racingcar.utilTest;
 
-import org.assertj.core.api.Assertions;
+import camp.nextstep.edu.missionutils.Randoms;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import racingcar.util.StringUtil;
@@ -18,5 +18,14 @@ public class TestUtil {
         assertThat(strings.length).isNotNull();
         assertThat(strings.length).isEqualTo(3);
         assertThat(strings).isEqualTo(new String[] {"하하","하하1","하하3"});
+    }
+
+    @Test
+    @DisplayName("random Number Test")
+    void random_Number_Test() {
+        // given
+        final int i = Randoms.pickNumberInRange(0, 9);
+        // when then
+        System.out.println("i = " + i);
     }
 }

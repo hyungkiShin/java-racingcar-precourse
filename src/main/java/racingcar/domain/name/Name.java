@@ -12,11 +12,11 @@ public class Name {
 
     public String validate(String name) {
         if (StringUtil.isBlank(name)) {
-            throw new IllegalArgumentException("빈값을 입력할 수 없습니다.");
+            throw new IllegalArgumentException("[ERROR]: 빈값을 입력할 수 없습니다.");
         }
 
         if (name.length() > 5) {
-            throw new IllegalArgumentException("이름 입력 범위를 초과하였습니다");
+            throw new IllegalArgumentException("[ERROR]: 이름 입력 범위를 초과하였습니다");
         }
         return name;
     }
